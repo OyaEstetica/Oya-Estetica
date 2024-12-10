@@ -1,11 +1,8 @@
-/*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
     --first-color: #069C54;
     --first-color-alt: #048654;
     --title-color: #393939;
@@ -14,7 +11,6 @@
     --body-color: #FBFEFD;
     --container-color: #FFFFFF;
 
-    /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
 
     --biggest-font-size: 2.25rem;
@@ -35,11 +31,9 @@
         --smaller-font-size: .813rem;
     }
 
-    /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes ==========*/
     --mb-1: .5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
@@ -47,28 +41,15 @@
     --mb-5: 2.5rem;
     --mb-6: 3rem;
 
-    /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
 }
 
-/*========== BASE ==========*/
 *,::before,::after{
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
-}
-
-
-/*========== Button Dark/Light ==========*/
-.change-theme {
-    position: absolute;
-    right: 1rem;
-    top: 1.8rem;
-    color: var(--text-color);
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 body{
@@ -95,7 +76,6 @@ img{
     height: auto;
 }
 
-/*========== CLASS CSS ==========*/
 .section{
     padding: 4rem 0 2rem;
 
@@ -116,7 +96,6 @@ img{
     }
 }
 
-/*========== LAYOUT ==========*/
 .bd-container{
     max-width: 960px;
     width: calc(100% - 2rem);
@@ -138,7 +117,6 @@ img{
     background-color: var(--body-color);
 }
 
-/*========== NAV ==========*/
 .nav{
     max-width: 1024px;
     height: var(--header-height);
@@ -186,21 +164,17 @@ img{
     }
 }
 
-/* Show menu */
 .show-menu{
     top: var(--header-height);
 }
-/* Active menu */
 .active-link{
     color: var(--first-color);
 }
 
-/* Change background header */
 .scroll-header{
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
-/* Scroll top */
 .scrolltop{
     position: fixed;
     right: 1rem;
@@ -230,7 +204,6 @@ img{
     bottom: 1.5rem;
 }
 
-/*========== HOME ==========*/
 .home{
     &__container{
         height: calc(100vh - var(--header-height));
@@ -252,7 +225,6 @@ img{
     }
 }
 
-/*========== BUTTONS ==========*/
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -267,7 +239,6 @@ img{
 }
 
 
-/*========== ABOUT ==========*/
 .about{
     &__data{
         text-align: center;
@@ -282,7 +253,6 @@ img{
     }
 }
 
-/*========== SERVICES ==========*/
 .services{
     &__container{
         row-gap: 2.5rem;
@@ -307,7 +277,6 @@ img{
     }
 }
 
-/*========== MENU ==========*/
 .menu{
     &__container{
         grid-template-columns: repeat(2, 1fr);
@@ -351,7 +320,6 @@ img{
     }
 }
 
-/*========== APP ==========*/
 .app{
     &__data{
         text-align: center;
@@ -372,7 +340,6 @@ img{
     }
 }
 
-/*========== CONTACT ==========*/
 .contact{
     &__container{
         text-align: center;
@@ -382,7 +349,6 @@ img{
     }
 }
 
-/*========== FOOTER ==========*/
 .footer{
     &__container{
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -425,7 +391,6 @@ img{
     }
 }
 
-/*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
     .home__container,
     .about__container,
