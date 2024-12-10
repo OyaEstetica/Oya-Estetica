@@ -55,6 +55,23 @@ html{
   scroll-behavior: smooth;
 }
 
+body.dark-theme{
+  --title-color: #faedcd;
+  --text-color: #C7D1CC;
+  --body-color: #000000;
+  --container-color: #181616;
+}
+
+.change-theme{
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
 body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
